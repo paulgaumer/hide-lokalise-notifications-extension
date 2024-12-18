@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Lokalise Toast Hider",
+  "version": "1.0",
+  "description": "Hides toast notifications on app.lokalise.com",
+  "host_permissions": ["https://app.lokalise.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.lokalise.com/*"],
+      "css": ["styles.css"]
+    }
+  ]
+}
